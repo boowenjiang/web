@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>学情分析</title>
+  <link rel="stylesheet" href="style/Fenxi.css">
+  <link rel="stylesheet" href="style/Common.css">
+</head>
+<body>
+<div class="header">
+  <div class="back"><span></span><a href="Index.html">返回首页</a></div>
+</div>
+<div class="content">
+  <h1>欢迎来到学情分析页面</h1>
+  <div class="title">
+    <ul>
+      <li><a href="#gailan">概览</a></li>
+      <li><a href="#chuqin">出勤情况</a></li>
+      <li><a href="#fenxi">成绩分析</a></li>
+      <li><a href="#fankui">学生反馈</a></li>
+    </ul>
+  </div>
+  <div class="body">
+    <div id="gailan" class="box">
+      <h2>概览</h2>
+      <p>包括学生总数、男女比例等整体情况。</p>
+      <ul>
+        <li>学生总数：<span id="total-number"></span></li>
+        <li>男生比例：<span id="male-ratio"></span></li>
+        <li>女生比例：<span id="female-ratio"></span></li>
+      </ul>
+    </div>
+    <div id="chuqin" class="box">
+      <h2>出勤情况</h2>
+      <canvas id="chuqin-canvas" width="1000" height="400"></canvas>
+    </div>
+    <div id="fenxi" class="box">
+      <h2>成绩分析</h2>
+      <canvas id="chengji-canvas" width="1000" height="400"></canvas>
+    </div>
+    <div id="fankui" class="box">
+      <h2>学生反馈</h2>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <ul>
+    <li><a href="#">关于我们</a></li>
+    <li><a href="#">联系我们</a></li>
+    <li><a href="#">故障报修</a></li>
+    <li><a href="#">合作招商</a></li>
+    <li><a href="#">寻求帮助</a></li>
+    <li><a href="#">手机平台</a></li>
+  </ul>
+</div>
+<script src="js/Fenxi.js"></script>
+</body>
+</html>

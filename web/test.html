@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div>
+  <button id="draw">点击抽取</button>
+  <p>你抽取的单词是:<span id="word"></span></p>
+  <p id="scrambled"></p>
+</div>
+<div>
+  <table>
+    <p>请输入正确的单词</p>
+    <input type="text"><button type="submit" id="submit">提交</button>
+  </table>
+</div>
+<script !src="">
+  var btn=document.getElementById('draw');
+  var arr=[
+    ['a.绝对的','absolute'],
+    ['b.绝对的','absolute'],
+    ['c.绝对的','absolute'],
+    ['d.绝对的','absolute'],
+    ['e.绝对的','absolute']
+  ]
+  var index = parseInt(Math.random() * arr.length);
+  var arr_word=arr[index];
+  btn.addEventListener('click',function() {
+    btn.disabled=true;
+    var word=document.getElementById('word');
+    word.innerHTML = arr_word[0];
+    var arr_a=arr_word[1].split('',1000)
+    arr_a.sort();
+    console.log(arr_a);
+    var s=document.getElementById('scrambled');
+    var html='';
+    for (let i = 0; i < arr_a.length; i++) {
+      html+=arr_a[i]+',';
+    }
+    s.innerHTML=html;
+  });
+  var btn2=document.getElementById('submit');
+  btn2.addEventListener('click',function() {
+    var inner=document.querySelector('input').value
+    console.log(inner)
+    console.log(arr_word[1])
+    if(inner===arr_word[1]){
+      alert('拼写正确');
+      btn.disabled=false;
+    }else{
+      alert('拼写错误');
+    }
+  })
+</script>
+</body>
+</html>

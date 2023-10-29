@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>欢迎使用教学互动与学情分析平台！</title>
+  <link rel="stylesheet" type="text/css" href="./style/Regisiter.css">
+  <link rel="stylesheet" href="style/Common.css">
+</head>
+<body>
+<div id="box">
+  <div id="title">
+    <img src="./img/Regisiter/background.png" alt="">
+    <h2>欢迎使用教学互动与学情分析平台</h2>
+    <p>www.education.com</p>
+  </div>
+  <div id="Regisiter">
+    <p>Regisiter</p>
+    <form action="Login.html">
+      <div class="inputbox username">
+        <label for="username">用户名</label>
+        <input type="text" id="username">
+        <span></span>
+      </div>
+      <div class="inputbox password">
+        <label for="password">密码</label>
+        <input type="text" id="password">
+        <span></span>
+      </div>
+      <div class="inputbox repet">
+        <label for="repet">请再次输入密码</label>
+        <input type="text" id="repet">
+        <span></span>
+      </div>
+      <div class="inputbox Phone">
+        <label for="repet">手机号</label>
+        <input type="text" id="phone" maxlength="11" class="phone">
+        <span class="checkCode"></span>
+        <div class="button"><a href="#" class="button_content">点击发送验证码</a></div>
+        <span></span>
+      </div>
+      <div class="inputbox code">
+        <label for="code">验证码</label>
+        <input type="text" id="code">
+        <span></span>
+      </div>
+      <input type="submit" value="submit" class="submit">
+    </form>
+  </div>
+</div>
+<script src="./js/Regisiter.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+body,html{
+    height: 100%;
+}
+body{
+    background: url("../img/Regisiter/earth.jpg")  no-repeat center/cover;
+    display: flex;
+}
+#box{
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    right: 20px;
+}
+#box img{
+    width: 100px;
+    height: 100px;
+}
+#title{
+    text-align: center;
+}
+#title h2,#title p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+#Login{
+    width: 360px;
+    height: 300px;
+    background-color: rgba(255,255,255,.7);
+    padding: 20px;
+    border-radius: 5%;
+    text-align: center;
+}
+#Login p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#Login h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: white;
+    /*text-align: center;*/
+}
+.inputbox{
+    position: relative;
+}
+.inputbox input{
+    width: 100%;
+    padding:10px 0;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.inputbox label{
+    animation-fill-mode:forwards;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #03a9f4;
+}
+
+
+
+.submit{
+    float: left;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    background: #03a9f4;
+    padding: 15px 20px;
+    cursor: pointer;
+    /*光标呈现为指示链接的指针（一只手）*/
+    border-radius: 10px;
+}
+.register{
+    float: right;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    background: #03a9f4;
+    padding: 15px 20px;
+    cursor: pointer;
+    /*光标呈现为指示链接的指针（一只手）*/
+    border-radius: 10px;
+    text-decoration: none;
+}
